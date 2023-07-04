@@ -22,8 +22,10 @@ if(isset($_POST['prenom'] )&& isset($_POST['email'])&& isset($_POST['date_de_nai
 $date = date_create($_POST['date_de_naissance']);
 echo date_format($date, 'Y-m-d H:i:s');
 }
-$Mois= date_format($date, 'F');
-echo "mois:".$Mois;
+$date = date_create('2000-01-01');
+echo date_format($date, 'Y-m-d H:i:s');
+//$Mois = date_format($date, 'Y-m-d H:i:s');
+//echo "mois:".$Mois;
 $signes = array("Capricorne","Verseau","Poisson","Bélier","Taureau","Gémeaux","Cancer","Lion","Vierge","Balance","Scorpion","Sagittaire");
 //$age=array("31 28 30 33 38 20 14 10 36 80 12 22");
 $mois = ["January", "February"," March"," April","May","June","July","August","September","October","November","December"];
